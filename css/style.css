@@ -1,0 +1,404 @@
+ul, li, a {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.menu-bar{
+    background-color: white;
+    padding: 20px 0;
+    color: #212121;
+}
+.menu__item a{
+    font-size: 20px;
+    color: #212121;
+    text-decoration: none;
+}
+.menu__item a:hover{
+    text-decoration: overline;
+    color: #d46464;
+}
+/* Шапка */
+.header {
+    color: white;
+    text-align: center;
+    padding: 180px 0;
+    background-size: cover;
+    background-position: center 100%;
+    background-image: url(../images/header.png);
+}
+.header__title{
+    font-size: 55px;
+}
+.header__text{
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+.button{
+    text-transform: uppercase;
+    background: #00897b;
+    padding: 10px 25px;
+    margin: 0 10px;
+    color: white;
+    transition: 0.4s;
+}
+.button:hover {
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid white;
+}
+
+/* О Нас */
+.about {
+    font-weight: bold;
+    padding: 120px 0 125px 0;
+    color: black;
+    text-align: center;
+    background: white;
+}
+.about__title {
+    font-size: 30px;
+    font-weight: bold;
+}
+.about__text{
+    color: #212121;
+    margin-bottom: 110px;
+}
+.about_h3{
+    margin: 30px 0 20px 0;
+    font-size: 20px;
+}
+/* Нашы услуги */
+.services {
+    font-weight: bold;
+    padding: 165px 0 125px 0;
+    color: black;
+    text-align: center;
+    background: #e4fdf9;
+}
+.our_card{
+    padding: 50px 25px 40px;
+    background: white;
+    transition: 0.4s;
+}
+.icon{
+    transition: 0.5s;
+    font-size: 60px;
+    color: black;
+}
+.button-services{
+    text-transform: uppercase;
+    border: 1px solid black;
+    background: transparent;
+    padding: 14px 12px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.our_card:hover{
+    background: #00897b;
+    color: white;
+    box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+}
+.our_card:hover .button-services{
+    border: 2px solid white;
+    color: white;
+}
+.our_card:hover .icon{
+    color: white;
+}
+/* Портфолио */
+.portfolio{
+ padding: 120px 0 135px 0;    
+}
+.portfolio button:hover{
+    background: transparent;
+    border: #00897b 2px solid;
+    color: black;
+}
+.portfolio button{
+    margin-bottom: 100px;
+}
+
+/* Цены */
+.pricing{
+    padding: 165px 0 125px 0;
+    color: black;
+    background: #f0f1f1;
+    text-align: center;
+}
+.price{
+    padding-bottom: 20px;
+    background: #fff;
+}
+.price__head{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-height: 211px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 0 60px 0;
+    background-image: url(../images/pricing_bg.png);
+}
+.price__head span, p{
+    
+    font-size: 25px;
+}
+.price__body li{
+    max-width: 120px;
+    border-bottom: 2px solid gray;
+}
+.price__body ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.price__footer{
+    margin: 20px;
+}
+.price__footer .button-services{
+    background: #fff;
+    border-radius: 10px;
+    padding: 8px 8px;
+    transition: 1s;
+}
+.price__footer .button-services:hover{
+    background: blue;
+    color: #fff;
+    border: #fff solid 2px;
+}
+/* Команда */
+.team {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: black;
+    background: #fff;
+    text-align: center;
+ }
+ 
+ .team h4 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 'Open Sans Semibold';
+ }
+ 
+ .team p {
+    font-size: 15px;
+    margin-bottom: 30px;
+ }
+ 
+ .icons {
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .icons a i {
+    transition: 0.3s;
+ }
+ 
+ .icons i:nth-child(1) {
+    color: #f0f1f1;
+ }
+ 
+ .icons i:nth-child(2) {
+    color: #00897b;
+ }
+ 
+ .icons a:hover i:nth-child(1) {
+    color: #3949ab;
+ }
+ 
+ .icons a:hover i:nth-child(2) {
+    color: #fff;
+ }
+ 
+ .team img {
+    margin: 0 auto;
+    max-width: 340px;
+ }
+ 
+ .multiple-items {
+    margin-top: 125px;
+ }
+ 
+ .dots-style {
+    margin-top: 115px;
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .dots-style button {
+    background: #00897b;
+    border: none;
+    border-radius: 50%;
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+ }
+ 
+ .dots-style li[class="slick-active"] button {
+    background: #3949ab;
+ }
+ 
+ /*Блог*/
+ .blog-item {
+    width: 48%;
+ }
+ 
+ .left>div:first-child {
+    order: 1;
+ }
+ 
+ .left>div:last-child {
+    order: 2;
+ }
+ 
+ .right>div:first-child {
+    order: 2;
+ }
+ 
+ .right>div:last-child {
+    order: 1;
+ }
+ 
+ .blog {
+    text-align: left;
+    margin-top: 60px;
+ }
+ 
+ .blog a {
+    font-size: 25px;
+    color: #00897b;
+    font-family: 'Open Sans Semibold';
+ }
+ 
+ .blog div {
+    margin-top: 15px;
+    margin-bottom: 20px;
+ }
+ 
+ .blog span {
+    font-size: 17px;
+    font-family: 'Open Sans Semibold';
+    margin-right: 35px;
+ }
+ 
+ .blog i {
+    margin-right: 15px;
+ }
+ 
+ .blog p {
+    font-size: 15px;
+ }
+ 
+ .button_blog {
+    width: 220px;
+    height: 70px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    margin-top: 125px;
+    transition: 0.3s;
+    border: 2px solid #00897b;
+    cursor: pointer;
+    background: #00897b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+ }
+ 
+ .button_blog:hover {
+    background: transparent;
+    color: #000;
+ }
+ 
+ /*Футер*/
+ .footer {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: #fff;
+    background-image: url(../images/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+ }
+ 
+ .footer .about__text {
+    color: #fff;
+ }
+ 
+ .fa-map-marker,
+ .fa-phone,
+ .fa-envelope {
+    font-size: 62px;
+    color: #fff;
+ }
+ 
+ .circle {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3949ab;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 35px;
+ }
+ 
+ .circle+p {
+    font-size: 20px;
+ }
+ 
+ .footer input,
+ .footer textarea {
+    padding: 30px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+ }
+ 
+ .footer input:focus,
+ .footer textarea:focus {
+    outline: none;
+ }
+ 
+ .footer textarea {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    resize: none;
+ }
+ 
+ .footer button {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #212121;
+    padding: 20px 80px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s
+ }
+ 
+ .footer button:hover {
+    opacity: 0.6;
+ }
+ 
+ .rules {
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 600;
+ }
+ 
+ .form {
+    margin-top: 70px;
+ }
+ 
+ 
+ 
+ .menu-icon {
+    display: none;
+ }
+ 
